@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Fade, Slide } from 'react-awesome-reveal';
+import MyButton from '../utils/MyButton';
+
+import ticket_icon from '../../resources/images/icons/ticket.png';
 
 const Discount = () => {
 
@@ -44,6 +47,15 @@ const Discount = () => {
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
+
+                    <MyButton 
+                        text='Purchase Tickets'
+                        link='https://www.ticketmaster.com/'
+                        color='#fff'
+                        background="#ffa800"
+                        icon={ticket_icon}
+                    /> 
+
                 </div>
             </Slide>
 
