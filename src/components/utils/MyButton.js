@@ -26,7 +26,6 @@ const MyButton = ( {
         >
             {icon && <img className="iconImage" alt="ticket icon button" src={icon} />}
             {text}
-
         </Button>
     );
 }
