@@ -1,6 +1,8 @@
 import React from 'react';
 import { Zoom } from 'react-awesome-reveal';
 
+import VenueCard from './VenueCard';
+
 import icon_calendar from '../../resources/images/icons/calendar.png';
 import icon_location from '../../resources/images/icons/location.png';
 
@@ -13,45 +15,21 @@ const VenueInfo = () => {
                 <div className="vn_wrapper">
 
                     <Zoom className="vn_item">
-                        <div className="vn_outer">
-                            <div className="vn_inner">
-                                <div className="vn_icon_square bck_red"></div>
-                                <div
-                                    className="vn_icon"
-                                    style={{
-                                        background: `url(${icon_calendar})`
-                                    }}
-                                ></div>
-                                <div className="vn_title">
-                                    Event Date & Time
-                                </div>
-                                <div className="vn_desc">
-                                    Nov 10th, 2021 @10PM
-                                </div>
-                            </div>
-                        </div>
+                        <VenueCard 
+                            color="#ff4800"
+                            icon={icon_calendar}
+                            titleText="Event Date & Time"
+                            descriptionText="Nov 10th, 2021 @10PM"
+                        />
                     </Zoom>
 
                     <Zoom className="vn_item">
-                    <div className="vn_outer">
-                            <div className="vn_inner">
-                                <div className="vn_icon_square bck_yellow"></div>
-                                <div
-                                    className="vn_icon"
-                                    style={{
-                                        background: `url(${icon_location})`
-                                    }}
-                                ></div>
-                                <div className="vn_title">
-                                    Event Location
-                                </div>
-                                <div className="vn_desc">
-                                    Downtown Chicago, IL
-                                </div>
-
-                            </div>
-
-                        </div>
+                        <VenueCard 
+                            color="#ffa800"
+                            icon={icon_location}
+                            titleText="Event Location"
+                            descriptionText="Downtown Chicago, IL"
+                        />
                     </Zoom>
 
                 </div>

@@ -12,7 +12,7 @@ const VenueCard = ( {
     return (
         <div className="vn_outer">
             <div className="vn_inner">
-                <div className="vn_icon_square" style={{background:{color}}}></div>
+                <div className="vn_icon_square" style={{background:color}}></div>
                 <div
                     className="vn_icon"
                     style={{
