@@ -1,4 +1,5 @@
 import React from 'react';
+import { scroller } from 'react-scroll';
 
 import { Drawer, List, ListItem } from '@material-ui/core';
 
@@ -13,9 +14,19 @@ const SideDrawer = ( { open, handleClick } ) => {
         { where: 'location', value: 'Location' }
     ];
 
+    const scrollToElement = (element) => {
+        scroller.scrollTo(element, {
+            duration: 1500,
+            delay: 100,
+            smooth: true,
+            offset: -80
+        });
+        handleClick();
+    }
+
     const renderItem = (item, index) => 
         (
-            <ListItem onClick={() => alert('where: ' + item.where)} key={index} style={{cursor: 'pointer'}}>
+            <ListItem onClick={() => scrollToElement(item.where)} key={index} style={{cursor: 'pointer'}}>
                 {item.value}
             </ListItem>
         );
