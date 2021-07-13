@@ -7,6 +7,7 @@ import Footer from './components/header_footer/Footer';
 import VenueInfo from './components/venueInfo';
 import Highlights from './components/highlights';
 import Pricing from './components/pricing/Pricing'; 
+import Location from './components/location/Location';
 
 const App = () => {
   return (
@@ -29,7 +30,9 @@ const App = () => {
         <Pricing />
       </>
 
-      <div style={ { backgroundColor: 'yellow', height: '800px' } }></div>
+      <>
+        <Location />
+      </>
         <Footer />
     </div>
   );
